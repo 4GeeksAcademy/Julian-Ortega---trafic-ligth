@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const TrafficLight = () => {
   const [color, setColor] = useState("red");
@@ -56,4 +54,4 @@ styles.innerHTML = `
 `;
 document.head.appendChild(styles);
 
-ReactDOM.render(<TrafficLight />, document.querySelector("#app"));
+export default TrafficLight;
